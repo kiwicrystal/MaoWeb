@@ -11,7 +11,7 @@ namespace MaoWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            gv.BorderStyle = BorderStyle.Ridge;
         }
     }
 }
