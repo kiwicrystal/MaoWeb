@@ -5,27 +5,26 @@
     <form method="post" action="?Action=Add">
         <fieldset>
             <legend>イベント登録</legend>
-            <p>
-                <label for="EventNum">EventNum:</label>
-                <input type="text" name="EventNum" />
-            </p>
+            <table style="border-collapse:separate; border-spacing:5px 20px;">
+                <tr>
+                <td><label for="EventNum">EventNum:</label></td>
+                <td><input type="text" name="EventNum" /></td>
+                </tr>
+                <tr>
+                <td><label for="Name">Name:</label></td>
+                <td><input type="text" name="Name" /></td>
+                </tr>
+                <tr>
+                <td><label for="Contents">Contents:</label></td>
+                <td><input type="text" name="Contents" /></td>
+                </tr>
+                <tr>
+                <td><label for="State">State:</label></td>
+                <td><input type="text" name="State" /></td>
+                </tr>
+           </table>
+                <input type="submit" name="buttonSubmit" value="新規登録" />
 
-            <p>
-                <label for="Name">Name:</label>
-                <input type="text" name="Name" />
-            </p>
-
-            <p>
-                <label for="Contents">Contents:</label>
-                <input type="text" name="Contents" />
-            </p>
-            <p>
-                <label for="State">State:</label>
-                <input type="text" name="State" />
-            </p>
-
-            <p>
-                <input type="submit" name="buttonSubmit" value="新規登録" /></p>
         </fieldset>
     </form>
     

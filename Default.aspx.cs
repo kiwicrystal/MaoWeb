@@ -57,20 +57,13 @@ namespace MaoWeb
         }
         public void bind()
         {
-            //string sqlstr = "SELECT * FROM RecordTable";
-            //sqlcon = new SqlConnection(strCon);
-            //SqlDataAdapter myda = new SqlDataAdapter(sqlstr, sqlcon);
-            //DataSet myds = new DataSet();
-            //sqlcon.Open();
-            //myda.Fill(myds, "datatable");
-            //GridView1.DataSource = myds;
 
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = strCon;
             conn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            string sqlstr = "SELECT * FROM RecordTable";
+            string sqlstr = "SELECT * FROM RecordTable ORDER BY EventNum DESC";
             cmd.CommandText = sqlstr;
             SqlDataReader reader = cmd.ExecuteReader();
             DataTable datatable = new DataTable();
