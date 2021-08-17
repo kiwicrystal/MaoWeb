@@ -4,7 +4,7 @@
     
     <style type="text/css">
     </style>     
-        <h1>ฅ•̀∀•́ฅ　～イベントを家族共有に～</h1>
+        <h1>ฅ•̀∀•́ฅ　～何でも家族間に共有～</h1>
 <form id="form1"  runat="server">
  <div>
  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4"
@@ -12,11 +12,11 @@
    OnRowUpdating="GridView1_RowUpdating" OnRowCancelingEdit="GridView1_RowCancelingEdit" Width="1112px" Height="385px">
       <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
       <Columns>
-       <asp:BoundField DataField="EventNum" HeaderText="EventNum" ReadOnly="True" />
-       <asp:BoundField DataField="Name" HeaderText="Name" />
-       <asp:BoundField DataField="Contents" HeaderText="Contents"/>
-       <asp:BoundField DataField="DateTime" HeaderText="DateTime" />
-       <asp:BoundField DataField="State" HeaderText="State" />
+       <asp:BoundField DataField="EventNum" HeaderText="TL番号" ReadOnly="True" ItemStyle-Width="60"/>
+       <asp:BoundField DataField="Name" HeaderText="ニックネーム" ItemStyle-Width="120"/>
+       <asp:BoundField DataField="Contents" HeaderText="♡MESSAGE♡"/>
+       <asp:BoundField DataField="DateTime" HeaderText="up日付" ItemStyle-Width="120"/>
+       <asp:BoundField DataField="State" HeaderText="yourコメント" />
        <asp:CommandField HeaderText="編集" ShowEditButton="True" />
        <asp:CommandField HeaderText="削除" ShowDeleteButton="True" />
       </Columns>

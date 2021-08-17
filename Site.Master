@@ -40,7 +40,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Date.ToString("D") %> - 家庭内イベント共有システム　　　　作成者 - 東京都立調布北高等学校　1年4組　君津由紀子</p>
+                <p>&copy; <%: DateTime.Now.Date.ToString("D") %> - 家庭内情報共有システム　　　　作成者 - 東京都立調布北高等学校　1年4組　君津由紀子</p>
             </footer>
         </div>
 </body>
